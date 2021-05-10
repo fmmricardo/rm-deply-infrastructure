@@ -1,0 +1,10 @@
+- name: Creates directory
+  file:
+    path: ~/temp
+    state: directory
+
+- name: Copy index test page
+  template:
+    src: "infra/rm-infra.yml"
+    dest: "~/temp/"
+
